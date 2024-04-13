@@ -4,3 +4,14 @@
 html에 두개의 엔진이 돌아감(현재는 css+js)
 
 js -> function 사용 (ex.alret...)
+
+;  ----------------------------------------
+
+> 2.1 Basic Data Types
+
+데이터타입 (value 값)
+1. integer - full number(정수) / ex.1,2,3..
+2. float - 함수? / ex.1.5
+3. string "" -> 큰 따옴표 안의 text
+
+;  ----------------------------------------
