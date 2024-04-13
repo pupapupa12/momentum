@@ -1,0 +1,6 @@
+> 2.0 Your First JS Project
+
+브라우저 - 'html'형식 파일 열기 (css/js 열려도 원하는 효과 사용X)
+html에 두개의 엔진이 돌아감(현재는 css+js)
+
+js -> function 사용 (ex.alret...)
