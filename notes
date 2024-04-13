@@ -15,3 +15,17 @@ js -> function 사용 (ex.alret...)
 3. string "" -> 큰 따옴표 안의 text
 
 ;  ----------------------------------------
+
+> 2.2 Variable
+
+console.log() -> ()괄호 안에 들어가는 것을 프린트/출력(=log)하여 콘솔에 나타냄
+    --> ()안에 데이터타입 기입 가능 
+        --> 단일 한가지의 타입만 기입 가능 
+
+variable (var) = 값을 저장하거나 유지하는 역할 
+constant (const) = 상수 / 바뀌지 않는 값 
+    -> var을 사용하기 위해 const를 사용해야함
+    --> const > variable한 값 (의미 작성)
+    ---> const => syntax
+    
+Javascript => 카멜표기명
