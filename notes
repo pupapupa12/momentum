@@ -10,9 +10,9 @@ js -> function 사용 (ex.alret...)
 > 2.1 Basic Data Types
 
 데이터타입 (value 값)
-1. integer - full number(정수) / ex.1,2,3..
-2. float - 함수? / ex.1.5
-3. string "" -> 큰 따옴표 안의 text
+    1. integer - full number(정수) / ex.1,2,3..
+    2. float - 함수? / ex.1.5
+    3. string "" -> 큰 따옴표 안의 text
 
 ;  ----------------------------------------
 
@@ -29,3 +29,14 @@ constant (const) = 상수 / 바뀌지 않는 값
     ---> const => syntax
     
 Javascript => 카멜표기명
+
+;  ----------------------------------------
+
+> 2.3 const and let
+
+variable을 쓸수 있는 2가지 방법
+    1. const : 변할 수 없음
+    2. let : 변할 수 있음
+        -> 하단에 재지정 가능 (코드는 위에서부터 아래로 읽히면서 적용됨)
+    3. var : 보호를 받지 못함 / 오류사항 검수 불가 (컴퓨터가 인식 x)
+    ------> 'const'를 기본적으로 사용 / 'let' 필요할 떄 사용 (업데이트 해야 할 내용일 경우) / 'var' 절대 사용x
