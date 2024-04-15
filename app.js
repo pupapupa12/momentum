@@ -1,23 +1,15 @@
-// const mon = "mon";
-// const tue = "tue";
-// const wed = "wed";
-// const thu = "thu";
-// const fri = "fri";
-// const sat = "sat";
-// const sun = "sun";
+const player = {
+    name : "nico",
+    points : 10,
+    fat : true,
+};
 
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+console.log(player.name);
+console.log(player["name"]);
 
-// get item from Array
-console.log(daysOfWeek);
-
-// add one more item from Array
-daysOfWeek.push("sun");
-
-console.log(daysOfWeek);
-
-
-const toBuy = ["potato", "tomato", "pizza"];
-toBuy.push("kimbab");
-
-console.log(toBuy[2]);
+// const를 바꾸는 것이 아닌 오브젝트 안의 무언가를 변경하는 것
+console.log(player);
+player.fat = false;
+player.lastName = "potato";
+player.points = player.points + 15;
+console.log(player);
