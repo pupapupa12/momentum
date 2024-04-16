@@ -1,3 +1,5 @@
+;; 세미콜론 2개 주석은 선생님 코멘트 필기
+
 > 2.0 Your First JS Project
 
 브라우저 - 'html'형식 파일 열기 (css/js 열려도 원하는 효과 사용X)
@@ -11,21 +13,22 @@ js -> function 사용 (ex.alret...)
 
 데이터타입 (value 값)
     1. integer - full number(정수) / ex.1,2,3..
-    2. float - 함수? / ex.1.5
+    2. float - 소수 / ex.1.5
     3. string "" -> 큰 따옴표 안의 text
+    ;; 4. null
 
 ;  ----------------------------------------
 
 > 2.2 Variable
 
-console.log() -> ()괄호 안에 들어가는 것을 프린트/출력(=log)하여 콘솔에 나타냄
+'console.log()' -> ()괄호 안에 들어가는 것을 프린트/출력(=log)하여 콘솔에 나타냄
     --> ()안에 데이터타입 기입 가능 
         --> 단일 한가지의 타입만 기입 가능 
 
 variable (var) = 값을 저장하거나 유지하는 역할 
 constant (const) = 상수 / 바뀌지 않는 값 
     -> var을 사용하기 위해 const를 사용해야함
-    --> const > variable한 값 (의미 작성)
+    --> const > var한 값 (의미 작성)
     ---> const => syntax
     
 Javascript => 카멜표기명
@@ -59,6 +62,8 @@ null = nothing(아무 것도 없음/비어있음)
 
 > 2.5 Arrays
 
+;; 데이터타입을 담는 데이터타입 => array도 데이터타입 중 하나
+
 arrays 사용 규칙
     1. 시작과 끝에 []대괄호 사용
     2. 각각의 항목은 ,쉼표로 분리되어야 함
@@ -77,19 +82,20 @@ array 안에 값(항목/내용)을 추가하려면 'push' 사용
 > 2.6 Objects
 
 Objects
-:같은 주제에 다른 property들을 부여하고 싶을 때 사용
+:같은 주제에 다른 property(=key)들을 부여하고 싶을 때 사용
 :데이터 타입을 정리하는 다른 방법
+;; 데이터타입을 담는 데이터타입 => object도 데이터타입 중 하나
 
 {} 중괄호 사용
     -> 'const var이름 = {
         property1 : 값 (-> 값부여 할때 '='말고 ':'사용)
     }'
 
-Object를 도출할 수 있는 방법 2가지
+* Object를 도출할 수 있는 방법 2가지
     1. 'console.log(var이름.property);'
     2. 'console.log(var이름["property"]);'
 
-Object 추가/업데이트/변경 방법
+* Object 추가/업데이트/변경 방법
     -> 'var이름.추가하고 싶은 property = value;'
         --> 값을 업데이트하거나 추가하기(+) 가능
         --> 추가하는 법
