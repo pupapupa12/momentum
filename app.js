@@ -1,15 +1,24 @@
-const player = {
-    name : "nico",
-    points : 10,
-    fat : true,
-};
+//// function 없이 코드 작성 (불필요하게 반복해야 함)
+// console.log("Hello my name is Nico");
+// console.log("Hello my name is Dal");
+// console.log("Hello my name is Shigatsu");
+// console.log("Hello my name is Nico");
+// console.log("Hello my name is Nico");
 
-console.log(player.name);
-console.log(player["name"]);
+function sayHello(){
+    console.log("Hello my name is C");
+}
 
-// const를 바꾸는 것이 아닌 오브젝트 안의 무언가를 변경하는 것
-console.log(player);
-player.fat = false;
-player.lastName = "potato";
-player.points = player.points + 15;
-console.log(player);
+alert();
+
+console.log();
+// () -> 아무것도 출력 안 함
+
+console.log("hello");
+sayHello("nico");
+
+sayHello();
+sayHello();
+sayHello();
+sayHello();
+sayHello();
