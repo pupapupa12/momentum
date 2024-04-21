@@ -1,24 +1,35 @@
-//// function 없이 코드 작성 (불필요하게 반복해야 함)
-// console.log("Hello my name is Nico");
-// console.log("Hello my name is Dal");
-// console.log("Hello my name is Shigatsu");
-// console.log("Hello my name is Nico");
-// console.log("Hello my name is Nico");
-
-function sayHello(){
-    console.log("Hello my name is C");
+// function에서 데이터 보내고 가져오는 방법
+function sayHello(nameOfPerson, age){
+    console.log("Hello may name is " + nameOfPerson + " and I'm " + age);
 }
 
-alert();
+sayHello("nico", 10);
+sayHello("dal", 23);
+sayHello("lynn", 21);
 
-console.log();
-// () -> 아무것도 출력 안 함
+function plus(a, b){
+    console.log(a+b);
+}
 
-console.log("hello");
-sayHello("nico");
+function divide(a, b){
+    console.log(a / b);
+}
 
-sayHello();
-sayHello();
-sayHello();
-sayHello();
-sayHello();
+plus(8, 60);
+divide(98, 20);
+
+
+const player = {
+    name: "nico",
+    sayHello: function(otherPersonName){
+        console.log("hello " + otherPersonName + " nice to meet you");
+    },
+};
+
+// object
+console.log(player.name);
+
+// function
+player.sayHello("lynn");
+player.sayHello("nico");
+

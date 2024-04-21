@@ -104,12 +104,34 @@ Objects
 ;  ----------------------------------------
 
 > 2.7 Function part One
+> 2.8 Function part Two
 
 Function 
 : 반복해서 사용가능한 코드 조각 
 : 코드를 캡슐화해서 여러번 실행가능하게 함
-'function function이름(){코드블럭};'
+'function function이름(변수){코드블럭};'
     -> '{코드블럭}' 안에 들어간 코드는 내가 function이름을 실행할 때 마다 발생
-    -> '()'이 function을 실행하는 방법
+    -> '()'이 function을 실행하는 변수
     --> 하단에 출력할 수 있는 코드를 작성하여 원하는 방식으로 출력...? 
     ex. alret() 
+
+1) argument로 어떤 데이터 입력
+2) 해당 데이터는 var이름으로 쓰임
+    -> 'function function이름(변수){코드블럭};'
+        -> '(변수)' 부분에 해당됨
+            ex. (nameOfPerson)
+        -> 1개만 할당 될 수 있는 건 아님 => 여러개 가능
+            ex. (nameOfPerson, age)
+
+* function plus(<-function이름)
+'function plus(a, b){코드블럭};'
+-> 2개의 argument를 가짐
+-> 작성된 순서에 따라서 a, b가 정해짐
+    ex. 'function plus(a, b){
+        console.log(a + b);}
+
+        plus(8, 60);'
+        => '8 = a / 60 = b' 로 지정
+        ==> 이름이 뭐가 되어도 순서에 따라서 지정됨
+
+NaN = Not a Number(숫자가 아님)
