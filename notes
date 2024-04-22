@@ -22,15 +22,15 @@ js -> function 사용 (ex.alret...)
 > 2.2 Variable
 
 'console.log()' -> ()괄호 안에 들어가는 것을 프린트/출력(=log)하여 콘솔에 나타냄
-    --> ()안에 데이터타입 기입 가능 
-        --> 단일 한가지의 타입만 기입 가능 
+    --> ()안에 데이터타입 기입 가능
+        --> 단일 한가지의 타입만 기입 가능
 
-variable (var) = 값을 저장하거나 유지하는 역할 
-constant (const) = 상수 / 바뀌지 않는 값 
+variable (var) = 값을 저장하거나 유지하는 역할
+constant (const) = 상수 / 바뀌지 않는 값
     -> var을 사용하기 위해 const를 사용해야함
     --> const > var한 값 (의미 작성)
     ---> const => syntax
-    
+
 Javascript => 카멜표기명
 
 ;  ----------------------------------------
@@ -74,7 +74,7 @@ arrays 사용 규칙
 
 array 안에 값(항목/내용)을 추가하려면 'push' 사용
     -> '지정한 array 이름.push()' <- 추가하려는 값
-    -> 추가 후 하단에 console.log 한번 더 출력 
+    -> 추가 후 하단에 console.log 한번 더 출력
         (상단의 같은 지정이름 호출해도 추가 된 값은 하단의 코드에만 적용됨)
 
 ;  ----------------------------------------
@@ -100,20 +100,20 @@ Objects
         --> 값을 업데이트하거나 추가하기(+) 가능
         --> 추가하는 법
             -> 'var이름.property = var이름.property + value'
-    
+
 ;  ----------------------------------------
 
 > 2.7 Function part One
 > 2.8 Function part Two
 
-Function 
-: 반복해서 사용가능한 코드 조각 
+Function
+: 반복해서 사용가능한 코드 조각
 : 코드를 캡슐화해서 여러번 실행가능하게 함
 'function function이름(변수){코드블럭};'
     -> '{코드블럭}' 안에 들어간 코드는 내가 function이름을 실행할 때 마다 발생
     -> '()'이 function을 실행하는 변수
-    --> 하단에 출력할 수 있는 코드를 작성하여 원하는 방식으로 출력...? 
-    ex. alret() 
+    --> 하단에 출력할 수 있는 코드를 작성하여 원하는 방식으로 출력...?
+    ex. alret()
 
 1) argument로 어떤 데이터 입력
 2) 해당 데이터는 var이름으로 쓰임
@@ -124,14 +124,19 @@ Function
             ex. (nameOfPerson, age)
 
 * function plus(<-function이름)
-'function plus(a, b){코드블럭};'
--> 2개의 argument를 가짐
--> 작성된 순서에 따라서 a, b가 정해짐
-    ex. 'function plus(a, b){
-        console.log(a + b);}
+    'function plus(a, b){코드블럭};'
+    -> 2개의 argument를 가짐
+    -> 작성된 순서에 따라서 a, b가 정해짐
+        ex. 'function plus(a, b){
+            console.log(a + b);}
 
-        plus(8, 60);'
-        => '8 = a / 60 = b' 로 지정
-        ==> 이름이 뭐가 되어도 순서에 따라서 지정됨
+            plus(8, 60);'
+            => '8 = a / 60 = b' 로 지정
+            ==> 이름이 뭐가 되어도 순서에 따라서 지정됨
+            ===> a,b,c는 {}안에서 정의 되어야함!
 
 NaN = Not a Number(숫자가 아님)
+
+;  ----------------------------------------
+
+> 2.11 Returns
