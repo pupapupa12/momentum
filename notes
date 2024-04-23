@@ -212,6 +212,7 @@ Condition
             - false || true === true
             - true || false === true
             - false || false === false
-
+    '===' : = 같다 (비교연산자)
+    '! ==' : 같지 않다
 
 

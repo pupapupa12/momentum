@@ -13,8 +13,17 @@ if (isNaN(age) || age < 0) {
   console.log("You can drink");
 } else if (age > 50 && age <= 80) {
   console.log("You should exercise");
+} else if (age === 100) {
+  console.log("wow you are wise"); // 여기에는 적용O
 } else if (age > 80) {
   console.log("You can whatever you want.");
+} else if (age === 100) {
+  console.log("wow you are wise");
+} // 위 조건에서 동일 사항이 걸리기 때문에 하단 조건 실행 X (상위로 올려줘야함)
+
+if ((a && b) || (c && d)) {
+  // (c && d)부터 계산됨
 }
-// 1. 숫자인지 아닌지
-// 2. 18보다 낮은 숫자인지
+
+if ((a && b) || (c && d) || x || W) {
+}
