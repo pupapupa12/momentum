@@ -1,7 +1,10 @@
 const age = parseInt(prompt("How old are you?"));
-// javascript는 윗문장에서 멈 춰서 기다리고 있음
-console.log(age);
+// console.log(isNaN(age));
 
-// value의 type 확인 방법 => typeof
-// 다른 type으로 변환하는 방법 => parseInt
-// console.log(age, parseInt(age));
+if (isNaN(age)) {
+  console.log("Please write a number");
+  // 숫자면 함수 실행 X
+  // 숫자가 아니면 함수 실행 O
+} else {
+  console.log("Thank you for writing your age.");
+}

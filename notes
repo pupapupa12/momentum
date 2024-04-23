@@ -150,6 +150,7 @@ return으로 밖에서 값을 받아서 사용할 수 있음
 ;  ----------------------------------------
 
 > 2.13 Conditionals (if / else)
+> 2.14 Conditionals part Two
 
 * prompt (=> function)
 : 사용자에게 창을 띄울 수 있게 해주는 함수
@@ -164,5 +165,21 @@ return으로 밖에서 값을 받아서 사용할 수 있음
     (ex. string/integer...)
 
 * parseInt() (=> function)
-:string을 number(=integer)로 변환하는 함수
+: string을 number(=integer)로 변환하는 함수
     -> parseInt한 후의 내용이 number이 아니면 'NaN'이라는 message를 띄움
+
+* isNaN() (=> function)
+: number가 아닌 경우 아니라고 알려주는 함수
+: boolean 형식으로 출력 (숫자 O = false / 숫자 X = true)
+    => conditional(조건문)에 넣을 수 있음
+
+Condition
+'if(condition => function){
+    /// condition === ture
+} else {
+    /// condition === false
+}'
+    -> 'else'는 조건이 2개이상 일때 사용
+    --> 'condition'은 무조건 boolean이여야함
+        => true면 'if(condition)'이 실행
+        => 'condition' = funtion
