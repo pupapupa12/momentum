@@ -144,3 +144,5 @@ NaN = Not a Number(숫자가 아님)
 function 안에 있는 것을 return하면 하단의 const한것의 값을 실핼할 수 있음
 
 외부에서 값을 얻어서 해결...?
+return으로 밖에서 값을 받아서 사용할 수 있음
+    -> return하면 그 수식(function)은 종료
