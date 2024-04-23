@@ -151,6 +151,7 @@ return으로 밖에서 값을 받아서 사용할 수 있음
 
 > 2.13 Conditionals (if / else)
 > 2.14 Conditionals part Two
+> 2.15 Conditionals part Three
 
 * prompt (=> function)
 : 사용자에게 창을 띄울 수 있게 해주는 함수
@@ -180,6 +181,37 @@ Condition
     /// condition === false
 }'
     -> 'else'는 조건이 2개이상 일때 사용
+    -> condition은 위에서부터 아래로 실행됨
     --> 'condition'은 무조건 boolean이여야함
         => true면 'if(condition)'이 실행
         => 'condition' = funtion
+    * else if
+    : condition을 추가할 수 있게 해줌
+    : 'else' 자리에 대신 사용
+    -> 조건이 3개 이상일때 사용 (여러번 사용O)
+    'if(condition => function){
+        /// condition === true(- 결과출력) or false(↓ 아래 조건여부 판단)
+    } else if(condition) {
+        /// condition === true(-) or false(↓)
+    } else (<- 선택적 사용) {
+        /// condition === 나머지 value(-)
+    }'
+
+~ 기호 / 부호 / 연산자 ~
+    '> =' : 이상
+    '< =' : 이하
+    '&&' : and
+        -> &&(and) 앞뒤로 있는 두개의 조건에 "모두" 충족해야함
+        - true && true === true
+        - false && true === false
+        - true && false === false
+        - false && false === true
+    '||' : or
+        -> ||(or) 앞뒤로 있는 두개의 조건 중 "하나만" 충족해도됨
+            - true || true === true
+            - false || true === true
+            - true || false === true
+            - false || false === false
+
+
+
