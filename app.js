@@ -27,3 +27,17 @@ if ((a && b) || (c && d)) {
 
 if ((a && b) || (c && d) || x || W) {
 }
+
+// 아래 함수에서
+// 1. result라는 변수를 선언하고, 그 변수에 a 나누기 b 의 값을 할당한다.
+// 2. result 라는 변수를 반환한다.
+const divide = (a, b) => {
+  return a / b;
+};
+
+const calculator = {
+  add: function (a,b) {
+    return a+b;
+  },
+  divide:
+}
