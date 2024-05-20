@@ -1,13 +1,3 @@
-// const fastAttack = (knightIsAwake) => {
-//     if (knightIsAwake == true) {
-//         return "canExecuteFastAttack";
-//     } else {
-//         return "cannotExecuteFastAttack";
-//     }
-// };
-
-// console.log(fastAttack());
-
 // < 함수 >
 
 // "라자냐가 요리되기 위해 오븐에 있어야하는 시간(분)"
@@ -28,8 +18,13 @@ function preparationTimeInMinutes(numberOfLayers) {
 
 // 전체 작업시간 (라자냐를 준비하는 데 걸리는 시간 + 오븐에 들어가있는 시간)
 
-function totalTimeInMinutes(numberOfLayers, actualMinutesInOven) {
-    return numberOfLayers * PREPARATION_MINUTES_PER_LAYER + actualMinutesInOven;
+function totalTimeInMinutes(x, actualMinutesInOven, y, t) {
+    const prepareTime = preparationTimeInMinutes(x);
+    const result = prepareTime + 1;
+
+    return result + actualMinutesInOven;
 }
 
-console.log totalTimeInMinutes(5, 30);
+const a = 5;
+const b = 30;
+console.log(totalTimeInMinutes(a));
